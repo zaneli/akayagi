@@ -8,7 +8,7 @@ Redmine::Plugin.register :akayagi do
   author 'Shunsuke Ohtani'
   description 'Akayagi san kara otegami tsuita!'
   version '0.0.1'
-  url ''
+  url 'https://github.com/zaneli/akayagi'
   author_url 'http://www.zaneli.com/'
 
   permission :akayagi_settings, {:akayagi => [:settings]}
