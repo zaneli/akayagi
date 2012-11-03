@@ -1,0 +1,7 @@
+# English strings go here for Rails i18n
+ja:
+  tab_label: "赤山羊"
+  permission_akayagi_settings: "赤山羊の設定"
+  subject_prefix: "件名の接頭辞"
+  from_address: "送信元アドレス"
+  enable_subject_prefix: "プロジェクト固有の接頭辞を設定する"

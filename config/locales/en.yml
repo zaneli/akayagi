@@ -1,0 +1,7 @@
+# English strings go here for Rails i18n
+en:
+  tab_label: "Akayagi"
+  permission_akayagi_settings: "Akayagi Settings"
+  subject_prefix: "Subject Prefix"
+  from_address: "From Address"
+  enable_subject_prefix: "Set the prefix of each project."

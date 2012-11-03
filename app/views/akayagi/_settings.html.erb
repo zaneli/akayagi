@@ -1,0 +1,44 @@
+<%
+  @settings =  AkayagiProjectSettings::find_or_create_by_project_id(@project.id)
+  @general_subject_prefix = AkayagiGeneralSettings::safe_subject_prefix
+%>
+
+<script type="text/javascript">
+  $(function() {
+    $("#enable_subject_prefix").click(function() {
+      var checked = $("#enable_subject_prefix").attr("checked");
+      if (checked) {
+        $("#subject_prefix").attr("disabled", false);
+        $("#subject_prefix").val("");
+      } else {
+        $("#subject_prefix").attr("disabled", true);
+        $("#subject_prefix").val($("#general_subject_prefix").val());
+      }
+     });
+  });
+</script>
+
+<%= form_for @settings,
+  :url => {:controller => 'akayagi',
+  :action => :save, :id => @project, :tab => 'akayagi',
+  :partial => 'akayagi/save',
+  :project_id => @project.id,
+  :setting_id => @settings.id} do |f| %>
+
+<div class="box tabular">
+  <p>
+    <label for="subject_prefix"><%= l(:subject_prefix) %></label>
+    <input id="subject_prefix" name="subject_prefix" type="text"  value="<%=h @settings.subject_prefix.nil? ? @general_subject_prefix : @settings.subject_prefix %>" <%= "disabled=\"disabled\"" if  @settings.subject_prefix.nil? %> />
+  </p>
+  <p>
+    <label for="enable_subject_prefix"><%= l(:enable_subject_prefix) %></label>
+    <input id="enable_subject_prefix" name="enable_subject_prefix" type="checkbox" <%= "checked" unless @settings.subject_prefix.nil? %> />
+  </p>
+  <p>
+    <label for="from_address"><%= l(:from_address) %></label>
+    <input id="from_address" name="from_address" type="text" value="<%=h @settings.from_address %>"/>
+  </p>
+  <input id="general_subject_prefix" type="hidden" value="<%=h @general_subject_prefix %>"/>
+  <%= submit_tag l(:button_save) %>
+<% end %>
+</div>
