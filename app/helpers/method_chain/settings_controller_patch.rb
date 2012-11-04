@@ -13,7 +13,7 @@ end
 module InstanceMethods
   def edit_with_akayagi
     if request.post? && params[:settings] && params[:settings].is_a?(Hash)
-      akayagi_general_setting = AkayagiGeneralSettings::find1_or_create
+      akayagi_general_setting = AkayagiGeneralSettings::find_first_or_create
       akayagi_general_setting.subject_prefix = params[:subject_prefix]
       akayagi_general_setting.save
     end

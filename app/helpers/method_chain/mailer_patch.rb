@@ -41,14 +41,10 @@ module ClassMethods
     else
       project = Project::find_by_identifier(project_identifier.to_s)
       project_settings = AkayagiProjectSettings::find_by_project_id(project.id)
-      if project_settings.nil?
+      if project_settings.nil? || project_settings.from_address.blank?
         org_from
       else
-        if project_settings.from_address.blank?
-          org_from
-        else
-          project_settings.from_address
-        end
+        project_settings.from_address
       end
     end
   end

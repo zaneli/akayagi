@@ -1,7 +1,7 @@
 class AkayagiGeneralSettings < ActiveRecord::Base
   unloadable
 
-  def self::find1_or_create
+  def self::find_first_or_create
     akayagi_general_settings = self::find(:first)
     if akayagi_general_settings.nil?
       return self::create
