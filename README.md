@@ -1,5 +1,5 @@
-#Ôƒ„ƒM‚³‚ñ‚©‚ç‚¨ŽèŽ†’…‚¢‚½I
-Akayagi ‚Í‚¿‚å‚Á‚Æ‚µ‚½ƒ[ƒ‹Ý’è‚ðs‚¤ Redmine ƒvƒ‰ƒOƒCƒ“‚Å‚·B
+#‚ ‚©ƒ„ƒM‚³‚ñ‚©‚ç‚¨ŽèŽ†’…‚¢‚½I
+ÔŽR—r‚Í‚¿‚å‚Á‚Æ‚µ‚½ƒ[ƒ‹Ý’è‚ðs‚¤ Redmine ƒvƒ‰ƒOƒCƒ“‚Å‚·B
 
 ## “®ìŠm”Fƒo[ƒWƒ‡ƒ“
 Redmine version 2.1.2.stable  
@@ -15,7 +15,7 @@ Redmine ‚©‚ç‘—M‚³‚ê‚é‘S‚Ä‚Ìƒ[ƒ‹(Œãq‚·‚éƒvƒƒWƒFƒNƒg‚²‚Æ‚ÌÝ’è‚ðs‚Á‚½ê‡‚ð
  •ÏX‚µ‚½’l‚Å‚Í‚È‚­[•Û‘¶]‰Ÿ‰º‚É‚æ‚è•Û‘¶‚³‚ê‚½Ú“ªŽ«‚ªŽg—p‚³‚ê‚Ü‚·B  
  ‘¼‚Ì“ü—ÍƒtƒB[ƒ‹ƒh‚à“¯—l‚Å‚ ‚Á‚½‚½‚ßA“Á•Ê‚Ìˆ—‚ðŽ{‚µ‚Ä‚¢‚Ü‚¹‚ñ)  
 
-## ƒvƒƒWƒFƒNƒg‚²‚Æ‚ÌÝ’è
+### ƒvƒƒWƒFƒNƒg‚²‚Æ‚ÌÝ’è
 ƒvƒƒWƒFƒNƒgƒƒjƒ…[‚ÌÝ’èƒy[ƒW‚ÉÔŽR—rƒ^ƒu‚ª’Ç‰Á‚³‚ê‚Ü‚·B  
 (‚±‚Ìƒ^ƒu‚ÍŠÇ—ŽÒ‹y‚Ñ ŠÇ— -> ƒ[ƒ‹‚ÆŒ ŒÀ‚É‚Ä[ÔŽR—r‚ÌÝ’è]‚Éƒ`ƒFƒbƒN‚µ‚½ƒ†[ƒU[‚É‚Ì‚Ý•\Ž¦‚³‚ê‚Ü‚·)  
 [ƒvƒƒWƒFƒNƒgŒÅ—L‚ÌÚ“ªŽ«‚ðÝ’è‚·‚é]‚ðƒ`ƒFƒbƒN‚µ‚È‚¢ê‡A‘S‘Ì‚ÌÝ’è‚Ì[Œ–¼‚ÌÚ“ªŽ«]‚ªŽg—p‚³‚ê‚Ü‚·B  
