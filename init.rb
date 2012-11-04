@@ -1,7 +1,8 @@
 require 'redmine'
 
-require_dependency File.dirname(__FILE__) + '/app/helpers/mailer_patch'
-require_dependency File.dirname(__FILE__) + '/app/helpers/settings_controller_patch'
+require_dependency File.dirname(__FILE__) + '/app/helpers/method_chain/mailer_patch'
+require_dependency File.dirname(__FILE__) + '/app/helpers/method_chain/settings_controller_patch'
+require_dependency File.dirname(__FILE__) + '/app/helpers/hook/settings_notifications_listener'
 
 Redmine::Plugin.register :akayagi do
   name 'Akayagi plugin'
