@@ -38,6 +38,18 @@
     <label for="from_address"><%= l(:from_address) %></label>
     <input id="from_address" name="from_address" type="text" value="<%=h @settings.from_address %>"/>
   </p>
+  <p>
+    <label for="to_address"><%= l(:to_address) %></label>
+    <input id="to_address" name="to_address" type="text" value="<%=h @settings.to_address %>"/>
+  </p>
+  <p>
+    <label for="cc_address"><%= l(:cc_address) %></label>
+    <input id="cc_address" name="cc_address" type="text" value="<%=h @settings.cc_address %>"/>
+  </p>
+  <p>
+    <label for="bcc_address"><%= l(:bcc_address) %></label>
+    <input id="bcc_address" name="bcc_address" type="text" value="<%=h @settings.bcc_address %>"/>
+  </p>
   <input id="general_subject_prefix" type="hidden" value="<%=h @general_subject_prefix %>"/>
   <%= submit_tag l(:button_save) %>
 <% end %>
