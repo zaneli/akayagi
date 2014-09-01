@@ -4,4 +4,7 @@ en:
   permission_akayagi_settings: "Akayagi Settings"
   subject_prefix: "Subject Prefix"
   from_address: "From Address"
-  enable_subject_prefix: "Set the prefix of each project."
+  to_address: "To Address"
+  cc_address: "CC Address"
+  bcc_address: "BCC Address"
+  enable_subject_prefix: "Set the prefix of per project."

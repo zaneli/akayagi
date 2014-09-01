@@ -1,26 +1,40 @@
-#‚ ‚©ƒ„ƒM‚³‚ñ‚©‚ç‚¨è†’…‚¢‚½I
-ÔR—r‚Í‚¿‚å‚Á‚Æ‚µ‚½ƒ[ƒ‹İ’è‚ğs‚¤ Redmine ƒvƒ‰ƒOƒCƒ“‚Å‚·B
+# Akayagi
 
-## “®ìŠm”Fƒo[ƒWƒ‡ƒ“
-Redmine version 2.1.2.stable  
-Ruby version 1.9.3 (i686-linux)  
-Rails version 3.2.8  
+This is Redmine plugin to extend mail settings.  
+"Akayagi" means Red Goat in Japanese (èµ¤å±±ç¾Š).
 
-## g—p•û–@
-### ‘S‘Ì‚Ìİ’è
-ŠÇ— -> İ’è -> ƒ[ƒ‹’Ê’mƒ^ƒu‚É[Œ–¼‚ÌÚ“ª«]“ü—ÍƒtƒB[ƒ‹ƒh‚ª’Ç‰Á‚³‚ê‚Ü‚·B  
-Redmine ‚©‚ç‘—M‚³‚ê‚é‘S‚Ä‚Ìƒ[ƒ‹(Œãq‚·‚éƒvƒƒWƒFƒNƒg‚²‚Æ‚Ìİ’è‚ğs‚Á‚½ê‡‚ğœ‚­)‚Ì  
-Œ–¼‚Ìæ“ª‚É[Œ–¼‚ÌÚ“ª«]‚É“ü—Í‚µ‚½’l‚ª•t—^‚³‚ê‚Ü‚·B  
-(‚È‚¨A“ü—Í’l‚ğ•ÏX‚µA[•Û‘¶]‚ğ‰Ÿ‰º‚µ‚È‚¢‚Ü‚Ü[ƒeƒXƒgƒ[ƒ‹‚ğ‘—M]‚µ‚½ê‡A  
- •ÏX‚µ‚½’l‚Å‚Í‚È‚­[•Û‘¶]‰Ÿ‰º‚É‚æ‚è•Û‘¶‚³‚ê‚½Ú“ª«‚ªg—p‚³‚ê‚Ü‚·B  
- ‘¼‚Ì“ü—ÍƒtƒB[ƒ‹ƒh‚à“¯—l‚Å‚ ‚Á‚½‚½‚ßA“Á•Ê‚Ìˆ—‚ğ{‚µ‚Ä‚¢‚Ü‚¹‚ñ)  
+## Versions that is confirmed to working
 
-### ƒvƒƒWƒFƒNƒg‚²‚Æ‚Ìİ’è
-ƒvƒƒWƒFƒNƒgƒƒjƒ…[‚Ìİ’èƒy[ƒW‚ÉÔR—rƒ^ƒu‚ª’Ç‰Á‚³‚ê‚Ü‚·B  
-(‚±‚Ìƒ^ƒu‚ÍŠÇ—Ò‹y‚Ñ ŠÇ— -> ƒ[ƒ‹‚ÆŒ ŒÀ‚É‚Ä[ÔR—r‚Ìİ’è]‚Éƒ`ƒFƒbƒN‚µ‚½ƒ†[ƒU[‚É‚Ì‚İ•\¦‚³‚ê‚Ü‚·)  
-[ƒvƒƒWƒFƒNƒgŒÅ—L‚ÌÚ“ª«‚ğİ’è‚·‚é]‚ğƒ`ƒFƒbƒN‚µ‚È‚¢ê‡A‘S‘Ì‚Ìİ’è‚Ì[Œ–¼‚ÌÚ“ª«]‚ªg—p‚³‚ê‚Ü‚·B  
-[ƒvƒƒWƒFƒNƒgŒÅ—L‚ÌÚ“ª«‚ğİ’è‚·‚é]‚ğƒ`ƒFƒbƒN‚µ‚½ê‡AƒvƒƒWƒFƒNƒgƒƒjƒ…[‚Ìİ’èƒy[ƒW‚Ì[Œ–¼‚ÌÚ“ª«]‚É“ü—Í‚µ‚½’l‚ª  
-ŠY“–ƒvƒƒWƒFƒNƒg‚ÉŠÖŒW‚·‚éƒ[ƒ‹‚ÌŒ–¼‚Ìæ“ª‚É•t—^‚³‚ê‚Ü‚·B  
-(“Á’è‚ÌƒvƒƒWƒFƒNƒg‚Ì‚İÚ“ª«‚ğ•t—^‚µ‚½‚­‚È‚¢ê‡A[ƒvƒƒWƒFƒNƒgŒÅ—L‚ÌÚ“ª«‚ğİ’è‚·‚év‚ğƒ`ƒFƒbƒN‚µA  
- ƒvƒƒWƒFƒNƒgƒƒjƒ…[‚Ìİ’èƒy[ƒW‚Ì[Œ–¼‚ÌÚ“ª«]‚É‰½‚à“ü—Í‚¹‚¸[•Û‘¶]‚ğ‰Ÿ‰º‚µ‚Ä‚­‚¾‚³‚¢B)  
-‚Ü‚½A[‘—MŒ³ƒAƒhƒŒƒX]‚Éƒ[ƒ‹ƒAƒhƒŒƒX‚ğ“ü—Í‚µ‚½ê‡AŠY“–ƒvƒƒWƒFƒNƒg‚ÉŠÖŒW‚·‚éƒ[ƒ‹‚Ì‘—MŒ³‚Æ‚µ‚Äg—p‚³‚ê‚Ü‚·B  
+* Redmine version 2.5.2.stable
+* Ruby version 2.0.0-p481 (2014-05-08) [x86_64-linux]
+* Rails version 3.2.19
+
+## Getting started
+
+### 1. Install the plugin
+
+```
+cd <REDMINE_HOME>/plugins
+git clone https://github.com/zaneli/akayagi.git
+```
+
+or download source code, unzip (or extract the archive), and move directories to `<REDMINE_HOME>/plugins`.
+
+### 2. Run db migration
+
+```
+rake redmine:plugins:migrate  RAILS_ENV=<development or production>
+```
+
+## Usage
+
+### General Settings
+
+Specify mail prefix.  
+![General Settings](http://www.zaneli.com/img/akayagi/akayagi01.png "General Settings")
+
+### Settings per project
+
+Specify mail prefix, from address, to address, cc address and bcc address.  
+(It can specify comma-separated multiple address at to, cc and bcc address)  
+![Settings per project](http://www.zaneli.com/img/akayagi/akayagi02.png "Settings per project")

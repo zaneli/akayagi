@@ -4,4 +4,7 @@ ja:
   permission_akayagi_settings: "赤山羊の設定"
   subject_prefix: "件名の接頭辞"
   from_address: "送信元アドレス"
+  to_address: "送信先アドレス(TO)"
+  cc_address: "送信先アドレス(CC)"
+  bcc_address: "送信先アドレス(BCC)"
   enable_subject_prefix: "プロジェクト固有の接頭辞を設定する"
