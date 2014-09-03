@@ -14,7 +14,7 @@ class AkayagiGeneralSettings < ActiveRecord::Base
     if akayagi_general_settings.nil?
       ""
     else
-      akayagi_general_settings.subject_prefix
+      akayagi_general_settings.subject_prefix.to_s #convert nil to empty string
     end
   end
 end
