@@ -1,0 +1,10 @@
+# Turkish strings go here for Rails i18n
+tr:
+  tab_label: "Akayagi"
+  permission_akayagi_settings: "Akayagi Ayarlar"
+  subject_prefix: "Konu ön eki"
+  from_address: "Kimden adresi"
+  to_address: "Kime adresi"
+  cc_address: "Bilgi adresi"
+  bcc_address: "Gizli koypa"
+  enable_subject_prefix: "Konu ön eklerini her proje için etkinleştir."
