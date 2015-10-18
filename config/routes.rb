@@ -1,4 +1,4 @@
 RedmineApp::Application.routes.draw do
-  post '/akayagi/save', :to => 'akayagi#save'
+  match '/akayagi/save', :to => 'akayagi#save', :via => [:post, :patch]
 end
 
