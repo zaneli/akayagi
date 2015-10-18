@@ -1,5 +1,5 @@
 <%
-  @settings =  AkayagiProjectSettings::find_or_create_by_project_id(@project.id)
+  @settings = AkayagiProjectSettings::find_or_create_by(project_id: @project.id)
   @general_subject_prefix = AkayagiGeneralSettings::safe_subject_prefix
 %>
 
