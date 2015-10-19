@@ -6,9 +6,9 @@ require_dependency File.dirname(__FILE__) + '/app/helpers/hook/settings_notifica
 
 Redmine::Plugin.register :akayagi do
   name 'Akayagi plugin'
-  author 'Shunsuke Ohtani'
+  author 'Shunsuke Otani'
   description 'Mail settings extension'
-  version '0.0.2'
+  version '0.0.3'
   url 'https://github.com/zaneli/akayagi'
   author_url 'http://www.zaneli.com/'
 
