@@ -2,7 +2,7 @@ class AkayagiGeneralSettings < ActiveRecord::Base
   unloadable
 
   def self::find_first_or_create
-    akayagi_general_settings = self::find(:first)
+    akayagi_general_settings = self::first
     if akayagi_general_settings.nil?
       return self::create
     end
@@ -10,7 +10,7 @@ class AkayagiGeneralSettings < ActiveRecord::Base
   end
 
   def self::safe_subject_prefix
-    akayagi_general_settings = self::find(:first)
+    akayagi_general_settings = self::first
     if akayagi_general_settings.nil?
       ""
     else

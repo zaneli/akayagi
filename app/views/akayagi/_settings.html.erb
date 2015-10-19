@@ -1,17 +1,17 @@
 <%
-  @settings =  AkayagiProjectSettings::find_or_create_by_project_id(@project.id)
+  @settings = AkayagiProjectSettings::find_or_create_by(project_id: @project.id)
   @general_subject_prefix = AkayagiGeneralSettings::safe_subject_prefix
 %>
 
 <script type="text/javascript">
   $(function() {
     $("#enable_subject_prefix").click(function() {
-      var checked = $("#enable_subject_prefix").attr("checked");
+      var checked = $("#enable_subject_prefix").prop("checked");
       if (checked) {
-        $("#subject_prefix").attr("disabled", false);
+        $("#subject_prefix").prop("disabled", false);
         $("#subject_prefix").val("");
       } else {
-        $("#subject_prefix").attr("disabled", true);
+        $("#subject_prefix").prop("disabled", true);
         $("#subject_prefix").val($("#general_subject_prefix").val());
       }
      });

@@ -5,9 +5,9 @@ This is Redmine plugin to extend mail settings.
 
 ## Versions that is confirmed to working
 
-* Redmine version 2.5.2.stable
-* Ruby version 2.0.0-p481 (2014-05-08) [x86_64-linux]
-* Rails version 3.2.19
+* Redmine version 3.1.0.stable
+* Ruby version 1.9.3-p551 (2014-11-13) [x86_64-linux]
+* Rails version 4.2.3
 
 ## Getting started
 
@@ -23,7 +23,7 @@ or download source code, unzip (or extract the archive), and move directories to
 ### 2. Run db migration
 
 ```
-rake redmine:plugins:migrate  RAILS_ENV=<development or production>
+rake redmine:plugins:migrate RAILS_ENV=<development or production>
 ```
 
 ## Usage
