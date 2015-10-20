@@ -20,6 +20,8 @@ module ClassMethods
     mail.to = get_to(project_settings, mail.to)
     mail.cc = get_cc(project_settings, mail.cc)
     mail.bcc = get_bcc(project_settings, mail.bcc)
+    mail.header["Sender"] = get_reply(project_settings, mail.from)
+    mail.header["Reply-To"] = get_reply(project_settings, mail.from)
     deliver_mail_without_akayagi(mail, &block)
   end
 
@@ -40,10 +42,20 @@ module ClassMethods
       project_settings.subject_prefix
     end
   end
-
-  def get_from(project_settings, org_from)
+  
+  def get_reply(project_settings, org_from)
     if project_settings.nil? || project_settings.from_address.blank?
       org_from
+    else
+      project_settings.from_address
+    end
+  end
+  
+  def get_from(project_settings, org_from)
+    if project_settings.nil? || project_settings.from_address.blank? || User.current.name.blank? || User.current.mail.blank?
+      org_from
+    elsif User.current.name
+      User.current.name + ' /Portal/ <' + User.current.mail + '>'
     else
       project_settings.from_address
     end
